@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+        springboot:
+                container_name: springboot
+                build:
+                        context: /opt/S06P12A106/backend/docker
+                ports:
+                        - "8899:8899"
+                volumes:
+                        - /opt/springboot/upload:/opt/upload/
+                        - /opt/springboot/sticker:/opt/sticker/
+        nginx:
+                image: nginx
+                container_name: nginx
+                volumes:
+                        - /opt/nginx/conf.d:/etc/nginx/conf.d
+                        - /opt/certbot/conf:/etc/letsencrypt
+                        - /opt/certbot/www:/var/www/certbot
+                ports:
+                        - "80:80"
+                        - "443:443"
+        certbot:
+                image: certbot/certbot
+                container_name: certbot
+                volumes:
+                         - /opt/certbot/conf:/etc/letsencrypt
+                         - /opt/certbot/www:/var/www/certbot

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "command": "audioecho delay=500000000 intensity=0.6 feedback=0.4",
+    "url": "에코"
+  },
+  {
+    "id": "2",
+    "command": "pitch pitch=0.8",
+    "url": "중후한 저음"
+  },
+  {
+    "id": "3",
+    "command": "pitch pitch=1.2",
+    "url": "촐싹거리는 목소리"
+  },
+  {
+    "id": "4",
+    "command": "audioinvert degree=0.4",
+    "url": "저음 고음 반전"
+  }
+]

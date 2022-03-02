@@ -1,0 +1,61 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.0.0-rc",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@themesberg/flowbite": "^1.3.0",
+    "animejs": "^3.2.1",
+    "autoprefixer": "^9",
+    "axios": "^0.25.0",
+    "core-js": "^3.6.5",
+    "infinite-loading-vue3": "^1.0.1",
+    "keen-slider": "^6.6.3",
+    "openvidu-browser": "^2.21.0-beta1",
+    "postcss": "^7",
+    "pretendard": "^1.2.1",
+    "sweetalert2": "^11.4.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue": "^3.2.29",
+    "vue-agile": "^2.0.0",
+    "vue-axios": "^3.4.0",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "vue-cli-plugin-tailwind": "~2.2.18"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
